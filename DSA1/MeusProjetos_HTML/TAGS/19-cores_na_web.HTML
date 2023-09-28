@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cores na WEB</title>
+    <style>
+    h1, #nome{color:red;}
+    h2, #hexa{ color: #ff0000;/* 0 1 2 ... 9 a b c d e f */}
+    h3, #rgb{ color: rgb(255,0,0);}
+    h4, #rgba {color: RGBA(255, 0, 0, 0.1);  /*Alpha 0.0, 0,1 até 1.0*/ }
+    h5, #grad { /* Da esquerda para direita */
+    background-image: linear-gradient(to right, red, green, blue);
+        color: #ffffff;}
+    h6, #grad{
+        /* Da esquerda para direita */
+        height: 7rem;
+        background-image: linear-gradient(to bottom right, red, yellow, white, aqua, violet);
+        color: #ffffff;
+    }
+    #radial{
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        background-image: radial-gradient(red, yellow, white);
+    }
+    #conico{
+        color: white;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        background-image: conic-gradient(red, yellow, green, blue, black);
+    }       
+    </style>
+</head>
+<body>
+    <h1>Usando Paragráfo</h1>
+   <p style="color: red;">Cor por Nome</p>
+<p style="color:#ff0000">Cor Por Hexadecimal</p>
+<p style="color: rgb(255,0,0)">Cor Por RGB</p>
+<p style="color: RGBA(255, 0, 0, 0.1);">Cor Por RGBA</p>
+<P style="background-image: linear-gradient(to right, red, green, blue)">Cor por Gradiente</P>
+<hr size="5px" color="black"/>
+<h1>Usando Div</h1>
+<div id="nome">Cor por nome</div>
+<div id="hexa">Cor por Hexadecimal</div>
+<div id="rgb">Cor por RGB</div>
+<div id="rgba">Cor por RGBA</div>
+<div id="grad">Cor por Gradiente</div>
+<hr size="5px" color="black"/>
+<h1>Usando Títulos</h1>
+<h1>Cor por nome</h1>
+<h2>Cor por Hexadecimal </h2>
+<h3>Cor por rgb</h3>
+<h4>Cor por RGBA</h4>
+<h5>Cor por Gradiente Linear</h5>
+<h6>Cor por Gradiente diagonal</h6>
+
+<hr size="5px" color="black"/>
+<div id="radial">RADIAL</div>
+
+<hr size="5px" color="black"/>
+<div id="conico">CONICO</DIV>
+    </body>
+</html>

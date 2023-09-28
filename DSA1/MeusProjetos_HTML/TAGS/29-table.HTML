@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uso de tabelas</title>
+    <style>
+    table{
+        font-size: 40px;
+    }
+    .bordasInterna td, 
+    .bordasInterna th {
+        border: 1px solid blue;
+    }
+    .coresTamanhoAlinhamento td, 
+    .coresTamanhoAlinhamento th{
+        background-color: yellow;
+        color: red;
+        width: 500px;
+        text-align: center;
+    }
+    .bordasRadiusStyle td, 
+    .bordasRadiusStyle th {
+        border: 3px solid;
+        border-radius: 50px;
+        border-style: dashed;
+        /* DOTTED/ DASHED/ SOLID/ DOUBLE/ GROOVE/ RIDGE/ INSET/ OUTSET/ NONE/ HIDDEN  */
+        border-color: red;
+    }
+    .espacoInternoCelula td, 
+    .espacoInternoCelula th, 
+    .espacoInternoCelula table{
+        border: 2px solid red;
+        padding: 5opx;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 1</h1>
+    <table>
+        <tr>
+            <td>MIF1AN</td>
+            <td>MIF2AN</td>
+            <td>MIF3AN</td>
+        </tr>
+    </table>
+    <hr/> <!-- ****************LINHA-->
+    <H1>Exemplo 2 - Título</H1>
+    <table>
+        <tr>
+            <th>1º Módulo</th>
+            <th>2º Módulo</th>
+            <th>3º Módulo</th>
+        </tr>
+        <tr>
+            <td>MIF1AN</td>
+            <td>MIF2AN</td>
+            <td>MIF3AN</td>
+        </tr>
+    </table>
+    <hr/> <!-- ****************LINHA-->
+    <h1>Exemplo 3- Inclusão de linhas internas</h1>
+    <table class="bordasInterna">
+    <tr>
+        <th>1º Módulo</th>
+        <th>2º Módulo</th>
+        <th>3º Módulo</th>
+    </tr>
+    <tr>
+        <td>MIF1AN</td>
+        <td>MIF2AN</td>
+        <td>MIF3AN</td>
+    </tr>
+    </table>
+    <hr/>
+    <!--**************LINHA-->
+    <h1>Exemplo 4- Inclusão de cores e tamanho de tabela</h1>
+    <table class="coresTamanhoAlinhamento">
+        <tr>
+            <th>1º Módulo</th>
+            <th>2º Módulo</th>
+            <th>3º Módulo</th>
+        </tr>
+        <tr>
+            <td>MIF1AN</td>
+            <td>MIF2AN</td>
+            <td>MIF3AN</td>
+        </tr>
+    </table>
+    <hr/><!--**************LINHA-->
+    <h1>Exemplo 5- Inclusão bordas com estilo e cores</h1>    
+    <table class="bordasRadiusStyle">
+        <tr>
+            <th>1º Módulo</th>
+            <th>2º Módulo</th>
+            <th>3º Módulo</th>
+        </tr>
+        <tr>
+            <td>MIF1AN</td>
+            <td>MIF2AN</td>
+            <td>MIF3AN</td>
+        </tr>
+    </table>
+    <hr/><!--**************LINHA-->
+    <h1>Exemplo 6 - Juntar linhas, colunas e alterar a altura da celula</h1>
+    <table class="bordasInterna">
+        <tr style="height: 100px;">
+        <th colspan="4">TURMAS</th>
+    </tr>
+    <tr>
+        <th rowspan="3">NOTURNO</th>
+        <th>1º Módulo</th>
+        <th>2º Módulo</th>
+        <th>3º Módulo</th>
+    </tr>
+    <tr>
+        <td>MIF1AN</td>
+        <td>MIF2AN</td>
+        <td>MIF3AN</td>
+    </tr>
+    </table>
+    <hr/><!--**************LINHA-->
+    <h1>Exemplo 7- Espaço interno das células e margem</h1>
+    <table class="espacoInternoCelula">
+        <tr style="height: 100px;">
+        <th colspan="3" >TURMAS
+        </th>
+    </tr>
+    <tr>
+        <td>1º Módulo</td>
+        <td>2º Módulo</td>
+        <td>3º Módulo</td>
+    </tr>
+    <tr>
+        <td>MIF1AN</td>
+        <td>MIF2AN</td>
+        <td>MIF3AN</td>
+    </tr>
+    </table>
+</body>
+</html>

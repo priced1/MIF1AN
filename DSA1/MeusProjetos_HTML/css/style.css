@@ -1,0 +1,18 @@
+body{
+    margin: 10px;
+}
+img{
+    width:20%;
+}
+.testandoEstilo{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: blue;
+    text-decoration: underline;
+}
+.meuParagrafo{
+    font-size: 30px;
+    text-indent: 250px;
+    color: gray;
+}
