@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+Z:\MIF1AN\LOGB\Projeto_eclipse\.metadata\.plugins\org.eclipse.jdt.core
+4109430166.index
+2455271037.index
